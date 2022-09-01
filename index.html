@@ -8,6 +8,8 @@
     <link rel="shortcut icon" href="./src/assets/owl_png.png" type="image/x-icon">
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/index.css">
+    <link rel="stylesheet" href="./src/css/modal.css">
+    <script defer src="./src/js/modal.js"></script>
 </head>
 <body>
     <main>
@@ -21,12 +23,25 @@
         </section>
         <section class="section__log">
             <h2>Come in</h2>
-            <article>
-                <input type="text" placeholder="Username or Email">
+            <form>
+                <input type="text" placeholder="Username or Email" required>
                 <input type="text" placeholder="Password">
-                <a href="">I forgot my password</a>
+                <button id="btnRecovery" data-modal-control="recovery__password">I forgot my password</buttonf=>
                 <button type="submit">Login</button>
-            </article>
+            </form>
+        </section>
+        <section class="modal__wrapper" id="recovery__password">
+            <form class="modal">
+                <div class="content__header">
+                    <h2>Password recovery</h2>
+                    <button data-modal-control="recovery__password" required>X</button>
+                </div>
+                <div class="content__body">
+                    <p>Fill in the field below with your email and wait for the code to recover your password.</p>
+                    <input type="email" placeholder="Type your e-mail" required>
+                    <button onclick="event.preventDefault()" type="submit" name="email">Submit</button>
+                </div>
+            </form>
         </section>
     </main>
 </body>
