@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --dark_violet:#331F57;
+    --light_violet:#C1A3F7;
+    --violet_ligth_medium:#8F58F5;
+    --violet_brown:#584875;
+    --violet_dark_medium:#7146c2;
+    --white:#FFFFFF;
+    --black:#000000;
+    --grey:#CCC;
+}
