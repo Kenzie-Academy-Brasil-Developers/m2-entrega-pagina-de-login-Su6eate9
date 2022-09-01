@@ -77,6 +77,7 @@
     border: 1px solid var(--dark_violet);
     border-radius: 10px;
     box-shadow: 0 0 2px .8;
+    cursor: pointer;
 }
 .show__modal{
     display: flex;    

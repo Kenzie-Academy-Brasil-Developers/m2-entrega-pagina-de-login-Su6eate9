@@ -26,7 +26,7 @@
             <form>
                 <input type="text" placeholder="Username or Email" required>
                 <input type="text" placeholder="Password">
-                <button id="btnRecovery" data-modal-control="recovery__password">I forgot my password</buttonf=>
+                <button onclick="event.preventDefault()" id="btnRecovery" data-modal-control="recovery__password">I forgot my password</buttonf=>
                 <button type="submit">Login</button>
             </form>
         </section>
@@ -34,7 +34,7 @@
             <form class="modal">
                 <div class="content__header">
                     <h2>Password recovery</h2>
-                    <button data-modal-control="recovery__password" required>X</button>
+                    <button data-modal-control="recovery__password">X</button>
                 </div>
                 <div class="content__body">
                     <p>Fill in the field below with your email and wait for the code to recover your password.</p>
