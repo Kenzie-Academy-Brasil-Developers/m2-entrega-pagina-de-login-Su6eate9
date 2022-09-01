@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    text-decoration-style: none;
+    background: var(--light_violet);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.section__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 40vh;
+    background-color:  var(--dark_violet);
+    padding: 30px;
+}
+.section__info > div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.section__info > div > img{
+    width: 3rem;
+}
+.section__info > div > h1{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--light_violet);
+}
+.section__info > p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--white);
+    margin: 20px 0 10px 0;
+}
+.section__info > span{
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--white);
+}
+.section__log{   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px; 
+    width: 100%;
+    height: 60vh;
+    background-color: var(--white);
+    padding: 30px;
+}
+.section__log > h2{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--violet_dark_medium);
+}
+.section__log > form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+.section__log > form input{
+    width: 100%;
+    height: 44px;
+    border: 2px solid var(--dark_violet);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--dark_violet);
+    font-size: .8rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+#btnRecovery{
+    background-color: var(--white);
+    border: none;
+    color: var(--dark_violet);
+    width: 100%;
+    height: 20px;
+    text-decoration: underline;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+input::placeholder{
+    color: var(--white);
+}
+.section__log > form > button{
+    width: 100%;
+    height: 44px;    
+    background-color: var(--dark_violet);
+    border: 2px solid var(--dark_violet);
+    border-radius: 10px;
+    color: var(--white);
+    font-size: .8rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+@media screen and (min-width:960px){
+    .section__info{
+        padding: 140px;
+    }
+    .section__info > div > img{
+        width: 5rem;
+    }
+    .section__info > div > h1{
+        font-size: 4rem;
+    }
+    .section__info > p{
+        font-size: 1.7rem;
+    }
+    .section__info > span{
+        font-size: 1.5rem;
+    }
+    .section__log{
+        padding: 140px;
+    }
+    .section__log > h2{
+        font-size: 3rem;
+    }
+    .section__log > form input{
+        height: 60px;
+        font-size: 1.1rem;
+    }
+    .section__log > form > button{
+        height: 60px;
+        font-size: 1.1rem;
+    }
+}
+@media screen and (min-width:1024px) {
+    main{
+        width: 80vw;
+        height: 80vh;
+        flex-direction: row;
+    }
+    .section__info{
+        width: 40vw;
+        height: 80%;
+        padding: 40px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .section__info > div > img{
+        width: 4rem;
+    }
+    .section__info > div > h1{
+        font-size: 2rem;
+    }
+    .section__info > p{
+        font-size: 1.2rem;
+    }
+    .section__info > span{
+        font-size: 1rem;
+    }
+    .section__log{
+        width: 60vh;
+        height: 80%;
+        padding: 50px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .section__log > h2{
+        font-size: 2rem;
+    }
+    .section__log > form input{
+        height: 44px;
+        font-size: .8rem;
+    }
+    .section__log > form > button{
+        height: 44px;
+        font-size: .8rem;
+    }
+}
+@media screen and (min-width:1500px) {
+    .section__info{
+        width: 30vw;
+        height: 80%;
+        
+        padding: 40px;
+    }
+    .section__info > div > img{
+        width: 4rem;
+    }
+    .section__info > div > h1{
+        font-size: 2rem;
+    }
+    .section__info > p{
+        font-size: 1.3rem;
+    }
+    .section__info > span{
+        font-size: 1.1rem;
+    }
+    .section__log{
+        width: 50vh;
+        height: 80%;
+        padding: 30px;
+    }
+    .section__log > h2{
+        font-size: 2rem;
+    }
+    .section__log > form input{
+        height: 44px;
+        font-size: .9rem;
+    }
+    .section__log > form > button{
+        height: 44px;
+        font-size: .9rem;
+    }
+}
