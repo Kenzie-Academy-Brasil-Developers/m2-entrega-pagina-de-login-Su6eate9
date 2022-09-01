@@ -66,14 +66,14 @@ main{
     font-weight: 700;
     color: var(--violet_dark_medium);
 }
-.section__log > article{
+.section__log > form{
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
     text-align: center;
 }
-.section__log > article input{
+.section__log > form input{
     width: 100%;
     height: 44px;
     border: 2px solid var(--dark_violet);
@@ -86,15 +86,21 @@ main{
     font-weight: 300;
     letter-spacing: 1px;
 }
+#btnRecovery{
+    background-color: var(--white);
+    border: none;
+    color: var(--dark_violet);
+    width: 100%;
+    height: 20px;
+    text-decoration: underline;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
 input::placeholder{
     color: var(--white);
 }
-.section__log > article > a{
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--violet_dark_medium);
-}
-.section__log > article > button{
+.section__log > form > button{
     width: 100%;
     height: 44px;    
     background-color: var(--dark_violet);
@@ -128,14 +134,11 @@ input::placeholder{
     .section__log > h2{
         font-size: 3rem;
     }
-    .section__log > article input{
+    .section__log > form input{
         height: 60px;
         font-size: 1.1rem;
     }
-    .section__log > article > a{
-        font-size: 1.3rem;
-    }
-    .section__log > article > button{
+    .section__log > form > button{
         height: 60px;
         font-size: 1.1rem;
     }
@@ -175,14 +178,11 @@ input::placeholder{
     .section__log > h2{
         font-size: 2rem;
     }
-    .section__log > article input{
+    .section__log > form input{
         height: 44px;
         font-size: .8rem;
     }
-    .section__log > article > a{
-        font-size: 1rem;
-    }
-    .section__log > article > button{
+    .section__log > form > button{
         height: 44px;
         font-size: .8rem;
     }
@@ -214,14 +214,11 @@ input::placeholder{
     .section__log > h2{
         font-size: 2rem;
     }
-    .section__log > article input{
+    .section__log > form input{
         height: 44px;
         font-size: .9rem;
     }
-    .section__log > article > a{
-        font-size: 1.1rem;
-    }
-    .section__log > article > button{
+    .section__log > form > button{
         height: 44px;
         font-size: .9rem;
     }
